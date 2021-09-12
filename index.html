@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Seminar Registration Form</title>
+</head>
+
+<body>
+    <div id="page-wrap">
+        <h1>Seminar <span>Registration</span></h1>
+        <form action="#" method="post">
+            <fieldset id="step_1">
+                <legend>Step 1</legend>
+                <label class="title" for="num_attendees">
+                    How many people will be attending?
+                </label>
+                <select class="num_attendees" id="num_attendees">
+                    <option id="opt_0" value="0" data-height-value="0">Please Choose</option>
+                    <option id="opt_1" value="1" data-height-value="100">1</option>
+                    <option id="opt_2" value="2" data-height-value="135">2</option>
+                    <option id="opt_3" value="3" data-height-value="170">3</option>
+                    <option id="opt_4" value="4" data-height-value="205">4</option>
+                    <option id="opt_5" value="5" data-height-value="240">5</option>
+                </select>
+                <br>
+                <div id="attendee_container">
+                    <h3>Please provide full names:</h3>
+                    <div id="attendee_wrap">
+                        <label for="name_attendee_1">
+                            Attendee 1 Name:
+                        </label>
+                        <input class="pointer" data-input-value="1" type="text" id="name_attendee_1">
+                    </div>
+                    <div id="attendee_wrap">
+                        <label for="name_attendee_2">
+                            Attendee 2 Name:
+                        </label>
+                        <input class="pointer" data-input-value="2" type="text" id="name_attendee_2">
+                    </div>
+                    <div id="attendee_wrap">
+                        <label for="name_attendee_3">
+                            Attendee 3 Name:
+                        </label>
+                        <input class="pointer" data-input-value="3" type="text" id="name_attendee_3">
+                    </div>
+                    <div id="attendee_wrap">
+                        <label for="name_attendee_4">
+                            Attendee 4 Name:
+                        </label>
+                        <input class="pointer" data-input-value="4" type="text" id="name_attendee_4">
+                    </div>
+                    <div id="attendee_wrap">
+                        <label for="name_attendee_5">
+                            Attendee 5 Name:
+                        </label>
+                        <input class="pointer" data-input-value="5" type="text" id="name_attendee_5">
+                    </div>
+                </div>
+                <div class="step_result" id="step1_result">
+                    <img src="assets/check.png" />
+                </div>
+            </fieldset>
+            <fieldset disabled id="step_2">
+                <legend>Step 2</legend>
+                <p class="title">
+                    Would you like your company name on your badges?
+                </p>
+                <div class="question_wrapper">
+                    <input type="radio" value="on" id="company_name_toggle_on" name="company_name_toggle_group">
+                    <label for="company_name_toggle_on">Yes</label>
+                    &emsp;
+                    <input type="radio" value="off" id="company_name_toggle_off" name="company_name_toggle_group">
+                    <label for="company_name_toggle_off">No</label>
+                </div>
+                <div id="company_name_wrap">
+                    <label for="company_name">
+                        Company Name:
+                    </label>
+                    <input type="text" id="company_name">
+                </div>
+                <p class="title">
+                    Will anyone in your group require special accommodations?
+                </p>
+                <div class="question_wrapper">
+                    <input type="radio" value="on" id="special_accommodations_toggle_on"
+                        name="special_accommodations_toggle">
+                    <label for="special_accommodations_toggle_on">Yes</label>
+                    &emsp;
+                    <input type="radio" value="off" id="special_accommodations_toggle_off"
+                        name="special_accommodations_toggle">
+                    <label for="special_accommodations_toggle_off">No</label>
+                </div>
+                <div id="special_accommodations_wrap">
+                    <label for="special_accomodations_text">
+                        Please explain below:
+                    </label>
+                    <textarea rows="10" cols="10" id="special_accomodations_text"></textarea>
+                </div>
+                <div class="step_result" id="step2_result">
+                    <img src="assets/check.png" />
+                </div>
+            </fieldset>
+
+            <fieldset disabled id="step_3">
+                <legend>Step 3</legend>
+                <label class="title" for="rock">
+                    Are you ready to rock?
+                </label>
+                <input type="checkbox" id="rock">
+                <input disabled type="submit" id="submit_button" value="Complete Registration">
+                <div class="step_result" id="step3_result">
+                    <img src="assets/check.png" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+<footer>
+    <script src="scripts/scripts.js"></script>
+</footer>
+
+</html>
