@@ -1,0 +1,118 @@
+body {
+	background: radial-gradient(
+		circle at 50% -20%,
+		#cfcfcf,
+		#9ea0a0,
+		#4b5050,
+		#242929
+	);
+	height: 100vh;
+}
+
+#page-wrap h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 45px;
+}
+
+#page-wrap h1 span {
+	color: rgb(44, 145, 212);
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#step_1 {
+	background-color: aquamarine;
+}
+
+#step_2 {
+	background-color: skyblue;
+}
+
+#step_3 {
+	background-color: sandybrown;
+}
+
+fieldset {
+	width: 33%;
+	max-width: 400px;
+	margin: 10px;
+	height: 100%;
+	overflow: hidden;
+	transition: height 0.4s;
+	transition-timing-function: cubic-bezier(1, -0.06, 0.15, 1.07);
+}
+
+fieldset:disabled {
+	border: 1px solid #999999;
+	background-color: #cccccc;
+	color: #666666;
+	opacity: 40%;
+}
+
+#attendee_container {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.4s;
+	transition-timing-function: cubic-bezier(1, -0.06, 0.15, 1.07);
+}
+
+fieldset legend {
+	font-family: Helvetica, Arial;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+fieldset label {
+	font-family: cursive;
+}
+
+.title {
+	font-size: 25px;
+	font-family: cursive;
+}
+
+#attendee_container h3 {
+	font-family: Helvetica, Arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#attendee_wrap {
+	margin: 10px;
+}
+
+.step_result img {
+	width: 100px;
+	height: 100px;
+	margin: 30px auto;
+	display: block;
+}
+
+#step1_result,
+#step2_result,
+#step3_result {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.4s;
+	transition-timing-function: cubic-bezier(1, -0.06, 0.15, 1.07);
+}
+
+.answer_wrapper {
+	font-size: 20px;
+}
+
+#company_name_wrap,
+#special_accommodations_wrap {
+	height: 0;
+	overflow: hidden;
+	margin: 7px;
+	transition: height 0.4s;
+	transition-timing-function: cubic-bezier(1, -0.06, 0.15, 1.07);
+}

@@ -1,0 +1,34 @@
+QUESTIONS
+
+1. Which browser and which tools do you usually use to develop? (Operating system, browser, various tools).
+    i've workerd with windows, mac and prefer windows.
+    i usually use Chrome as my main browser
+    I use fork or source tree for version control, VScode or Rider as IDE, Slack for comunication, Jira for task management and confluence for documentation.
+
+2. How do you optimize assets? (CSS, Js, Images).
+    minifying it and using web images format
+
+3. Why a website usually serves assets from different domains?
+    Because it uses API so you don't have to host assetsthat are already online.
+
+4. Which new technology would you like to learn during this year?
+    microservicies
+
+5. Write 3 methods to reduce the page’s load time.
+    using glup or grunt to minify your CSS and Js
+    Optimize images sizes and using source set to load them
+    use service worker to load essential assets (favicon, main CSS, main JS, ecc.)
+
+6. Do you use any CSS preprocessor? If yes, describe what do you like about preprocessors and what you don’t.
+    i use SASS for the possibility to organize classes better and for the variables. 
+
+7. How do you include a non standard font in a website?
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+    </style>
+
+    or
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
